@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import {SmileIcon, MehIcon, FrownIcon, AngryIcon, SleepyIcon} from "lucide-react"
 
 interface HomeScreenProps {
   onNavigate: (tab: string) => void
@@ -11,11 +12,11 @@ export function HomeScreen({ onNavigate }: HomeScreenProps) {
   const [selectedSymptoms, setSelectedSymptoms] = useState<string[]>([])
 
   const moods = [
-    { emoji: '😊', label: 'Happy' },
-    { emoji: '😐', label: 'Okay' },
-    { emoji: '😢', label: 'Sad' },
-    { emoji: '😠', label: 'Stressed' },
-    { emoji: '😴', label: 'Tired' },
+    { emoji: <SmileIcon color="var(--rose-two)" />, label: 'Happy' },
+    { emoji: <MehIcon color="var(--rose-two)" />, label: 'Okay' },
+    { emoji: <FrownIcon color="var(--rose-two)" />, label: 'Sad' },
+    { emoji: <AngryIcon color="var(--rose-two)" />, label: 'Stressed' },
+    { emoji: <SleepyIcon color="var(--rose-two)" />, label: 'Tired' },
   ]
 
   const symptoms = ['Headache', 'Swelling', 'Tired', 'Nausea', 'Back pain', 'Heartburn']

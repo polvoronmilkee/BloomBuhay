@@ -130,29 +130,46 @@ export function getResponse(text: string): string {
   return 'That\'s a great question, mommy! For specific medical concerns, please consult with your OB-GYN. In the meantime, try the quick questions below for common topics, or visit Konsulta to find a clinic near you. 💕'
 }
 
+
 export const clinicsData = [
   {
-    name: 'Chong Hua Hospital – OB-GYN Dept.',
-    rating: 4.9,
-    reviews: 512,
-    address: 'Don Mariano Cui St., Cebu City',
-    hours: '7:00 AM – 6:00 PM',
-    distance: '1.2 km'
-  },
-  {
-    name: 'Cebu Doctors\' University Hospital',
+    name: 'Iloilo Mission Hospital - OB-GYN Department',
     rating: 4.8,
-    reviews: 348,
-    address: 'Osmena Blvd., Cebu City',
+    reviews: 425,
+    address: 'Mission Road, Jaro, Iloilo City',
     hours: '8:00 AM – 5:00 PM',
-    distance: '2.1 km'
+    distance: '1.5 km'
   },
   {
-    name: 'PhilHealth Maternity Clinic Cebu',
+    name: 'QualiMed Hospital Iloilo (Women\'s Health Center)',
+    rating: 4.9,
+    reviews: 312,
+    address: 'Atria Park District, Mandurriao, Iloilo City',
+    hours: '9:00 AM – 6:00 PM',
+    distance: '2.8 km'
+  },
+  {
+    name: 'The Medical City Iloilo - Maternity Unit',
+    rating: 4.7,
+    reviews: 286,
+    address: 'Locsin St., Molo, Iloilo City',
+    hours: '24 Hours',
+    distance: '3.1 km'
+  },
+  {
+    name: 'St. Paul’s Hospital Iloilo - Mother & Child Center',
+    rating: 4.6,
+    reviews: 194,
+    address: 'Gen. Luna St., Iloilo City Proper',
+    hours: '8:00 AM – 5:00 PM',
+    distance: '0.8 km'
+  },
+  {
+    name: 'Reproductive Health & Fertility Center (Iloilo Doctors\')',
     rating: 4.5,
-    reviews: 89,
-    address: 'M.J. Cuenco Ave., Cebu City',
-    hours: '8:00 AM – 4:00 PM',
-    distance: '3.4 km'
+    reviews: 115,
+    address: 'Infante St., Molo, Iloilo City',
+    hours: '9:00 AM – 4:00 PM',
+    distance: '2.4 km'
   }
 ]

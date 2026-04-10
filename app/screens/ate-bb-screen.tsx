@@ -14,7 +14,7 @@ interface AteBBScreenProps {
 
 export function AteBBScreen({ onNavigate }: AteBBScreenProps) {
   const [messages, setMessages] = useState<Message[]>([
-    { type: 'bot', text: "Hi mom! I'm Ate BB, your virtual pregnancy companion 💕 Huwag mahiyang magtanong! Ask me anything about your pregnancy journey, and I'll do my best to help!" }
+    { type: 'bot', text: "Hi, Maria! I'm Ate BB, your virtual companion 💕 Huwag mahiyang magtanong! Ask me anything about your pregnancy journey, and I'll do my best to help!" }
   ])
   const [inputValue, setInputValue] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)

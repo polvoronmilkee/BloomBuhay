@@ -93,7 +93,7 @@ export function BookingModal({ isOpen, clinicName, onClose }: BookingModalProps)
                 onChange={(e) => setReason(e.target.value)}
               />
             </div>
-            <button className="btn btn-primary btn-full" onClick={handleConfirm} style={{ marginTop: '8px' }}>
+            <button className="btn btn-light-pink btn-full" onClick={handleConfirm} style={{ marginTop: '8px' }}>
               Confirm Appointment ✓
             </button>
           </div>

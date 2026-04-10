@@ -1,5 +1,7 @@
 "use client"
 
+import {Home,  MessageCircleHeart, HeartHandshake, Hospital, Activity } from "lucide-react"
+
 interface SidebarProps {
   activeTab: string
   onNavigate: (tab: string) => void
@@ -7,11 +9,11 @@ interface SidebarProps {
 
 export function Sidebar({ activeTab, onNavigate }: SidebarProps) {
   const navItems = [
-    { id: 'home', icon: '🏠', label: 'Home' },
-    { id: 'ate-bb', icon: '💬', label: 'Ate BB', badge: '!' },
-    { id: 'gabay', icon: '📖', label: 'Gabay' },
-    { id: 'konsulta', icon: '🏥', label: 'Konsulta' },
-    { id: 'metrics', icon: '📊', label: 'Metrics' },
+    { id: 'home', icon: <Home color="var(--rose-two)" />, label: 'Home' },
+    { id: 'ate-bb', icon: <MessageCircleHeart color="var(--rose-two)" />, label: 'Ate BB', badge: '!' },
+    { id: 'gabay', icon: <HeartHandshake color="var(--rose-two)" />, label: 'Gabay' },
+    { id: 'konsulta', icon: <Hospital color="var(--rose-two)" />, label: 'Konsulta' },
+    { id: 'metrics', icon: <Activity color="var(--rose-two)" />, label: 'Metrics' },
   ]
 
   return (
@@ -20,7 +22,7 @@ export function Sidebar({ activeTab, onNavigate }: SidebarProps) {
         <div className="brand-icon">🌸</div>
         <div>
           <div className="brand-text">BloomBuhay</div>
-          <div className="brand-sub">Pregnancy Companion</div>
+          <div className="brand-sub">For A Life That Gives Life</div>
         </div>
       </div>
       <div className="sidebar-user">
