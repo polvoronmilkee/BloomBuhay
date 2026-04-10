@@ -1,40 +1,43 @@
-import type { Metadata, Viewport } from 'next'
-import { Nunito, Playfair_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
-import './globals.css'
+import type { Metadata, Viewport } from "next";
+import { Nunito, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const nunito = Nunito({ 
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: '--font-nunito',
-})
+  variable: "--font-nunito",
+});
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ['600'],
-  variable: '--font-playfair',
-})
+  weight: ["600"],
+  variable: "--font-playfair",
+});
 
 export const metadata: Metadata = {
-  title: 'BloomBuhay',
-  description: 'For a Life that Gives Life.',
-}
+  manifest: "/manifest.json",
+  title: "BloomBuhay",
+  description: "For a Life that Gives Life.",
+};
 
 export const viewport: Viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunito.variable} ${playfair.variable} font-sans antialiased`}>
+      <body
+        className={`${nunito.variable} ${playfair.variable} font-sans antialiased`}
+      >
         {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
-  )
+  );
 }

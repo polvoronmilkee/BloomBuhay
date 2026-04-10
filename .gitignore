@@ -14,3 +14,7 @@ next.user-config.*
 node_modules
 .next/
 .DS_Store
+
+public/sw.js
+public/sw.js.map
+public/swe-worker*.js
