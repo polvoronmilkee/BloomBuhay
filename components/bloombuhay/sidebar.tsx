@@ -1,6 +1,7 @@
 "use client"
 
 import {Home,  MessageCircleHeart, HeartHandshake, Hospital, Activity } from "lucide-react"
+import "../../public/icon-192x192.png";
 
 interface SidebarProps {
   activeTab: string
@@ -16,10 +17,14 @@ export function Sidebar({ activeTab, onNavigate }: SidebarProps) {
     { id: 'metrics', icon: <Activity color="var(--rose-two)" />, label: 'Metrics' },
   ]
 
+  const logo = new URL("../../public/icon-192x192.png", import.meta.url).href;
+
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <div className="brand-icon">🌸</div>
+        <div className="brand-logo">
+          <img src={logo} alt="BloomBuhay Logo" style={{ width: '40px', height: '40px' }} />
+        </div>
         <div>
           <div className="brand-text">BloomBuhay</div>
           <div className="brand-sub">For A Life That Gives Life</div>
