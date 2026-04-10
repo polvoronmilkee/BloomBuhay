@@ -48,7 +48,7 @@ export function HomeScreen({ onNavigate }: HomeScreenProps) {
       <div className="mobile-header">
         <div className="mobile-header-top">
           <div className="mobile-brand">
-            <div className="mobile-brand-icon">🌸</div>
+            <div className="mobile-brand-icon"></div>
             <div className="mobile-brand-name">BloomBuhay</div>
           </div>
           <div
