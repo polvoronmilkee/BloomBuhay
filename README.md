@@ -20,7 +20,7 @@ BloomBuhay is a **PWA app prototype** that helps Filipinas navigate motherhood â
 
 ## ðŸš€ Live Demo
 
-> *[Insert your deployed PWA link here, e.g., Netlify/Vercel]*
+> *https://bloombuhay.vercel.app/*
 
 ---
 
