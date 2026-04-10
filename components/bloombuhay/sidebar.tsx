@@ -1,5 +1,8 @@
 "use client"
 
+import {Home,  MessageCircleHeart, HeartHandshake, Hospital, Activity } from "lucide-react"
+import "../../public/icon-192x192.png";
+
 interface SidebarProps {
   activeTab: string
   onNavigate: (tab: string) => void
@@ -7,20 +10,24 @@ interface SidebarProps {
 
 export function Sidebar({ activeTab, onNavigate }: SidebarProps) {
   const navItems = [
-    { id: 'home', icon: '🏠', label: 'Home' },
-    { id: 'ate-bb', icon: '💬', label: 'Ate BB', badge: '!' },
-    { id: 'gabay', icon: '📖', label: 'Gabay' },
-    { id: 'konsulta', icon: '🏥', label: 'Konsulta' },
-    { id: 'metrics', icon: '📊', label: 'Metrics' },
+    { id: 'home', icon: <Home color="var(--rose-two)" />, label: 'Home' },
+    { id: 'ate-bb', icon: <MessageCircleHeart color="var(--rose-two)" />, label: 'Ate BB', badge: '!' },
+    { id: 'gabay', icon: <HeartHandshake color="var(--rose-two)" />, label: 'Gabay' },
+    { id: 'konsulta', icon: <Hospital color="var(--rose-two)" />, label: 'Konsulta' },
+    { id: 'metrics', icon: <Activity color="var(--rose-two)" />, label: 'Metrics' },
   ]
+
+  const logo = new URL("../../public/icon-192x192.png", import.meta.url).href;
 
   return (
     <aside className="sidebar">
       <div className="sidebar-brand">
-        <div className="brand-icon">🌸</div>
+        <div className="brand-logo">
+          <img src={logo} alt="BloomBuhay Logo" style={{ width: '40px', height: '40px' }} />
+        </div>
         <div>
           <div className="brand-text">BloomBuhay</div>
-          <div className="brand-sub">Pregnancy Companion</div>
+          <div className="brand-sub">For A Life That Gives Life</div>
         </div>
       </div>
       <div className="sidebar-user">
