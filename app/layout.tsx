@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'BloomBuhay — Pregnancy Companion',
-  description: 'Your trusted pregnancy companion app',
+  title: 'BloomBuhay',
+  description: 'For a Life that Gives Life.',
 }
 
 export const viewport: Viewport = {
